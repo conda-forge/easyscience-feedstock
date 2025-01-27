@@ -1,6 +1,7 @@
 context:
   name: easyscience
   version: 1.2.1
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -11,19 +12,18 @@ source:
   sha256: 6a802d45f6599bb11579f16031663ada82ff54756a1ca78667a64105f22ad739
 
 build:
-  number: 0
-  skip:
-    - match(python, "<3.11")
+  number: 1
+  noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python
+    - python ${{ python_min }}.*
     - hatchling <=1.21.0
     - setuptools-git-versioning
     - pip
   run:
-    - python
+    - python >=${{ python_min }},<3.13
     - asteval
     - bumps
     - dfo-ls
@@ -38,7 +38,7 @@ tests:
   - script: python -c "import easyscience"
     requirements:
       run:
-        - python
+        - python ${{ python_min }}.*
 
 about:
   homepage: https://easyscience.github.io/EasyScience/
