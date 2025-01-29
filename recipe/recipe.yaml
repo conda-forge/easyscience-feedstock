@@ -1,7 +1,7 @@
 context:
   name: easyscience
   version: 1.2.1
-  python_min: "3.11"
+  python_min: "3.10"
 
 package:
   name: ${{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: 6a802d45f6599bb11579f16031663ada82ff54756a1ca78667a64105f22ad739
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
