@@ -1,6 +1,6 @@
 context:
   name: easyscience
-  version: 1.2.1
+  version: "1.3.0"
   python_min: "3.10"
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easyscience-${{ version }}.tar.gz
-  sha256: 6a802d45f6599bb11579f16031663ada82ff54756a1ca78667a64105f22ad739
+  sha256: 1160fb26539ecc6647542727857a4c3943ceca8ba911ad5f2b0b5bf176d616f6
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
