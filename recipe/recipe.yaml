@@ -39,7 +39,7 @@ tests:
         - python ${{ python_min }}.*
 
 about:
-  homepage: https://easyscience.github.io/EasyScience/
+  homepage: https://github.com/easyscience/corelib
   summary: Generic logic for easyScience libraries
   license: BSD-3-Clause
   license_file: LICENSE
