@@ -1,7 +1,7 @@
 context:
   name: easyscience
   version: "2.0.0"
-  python_min: "3.10"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -23,15 +23,13 @@ requirements:
     - setuptools-git-versioning
     - pip
   run:
-    - python >=${{ python_min }},<3.13
+    - python >=${{ python_min }},<3.14
     - asteval
     - bumps
     - dfo-ls
     - lmfit
-    - numpy <2
+    - numpy
     - uncertainties
-    - xarray
-    - pint ==0.23
     - scipp
 
 tests:
