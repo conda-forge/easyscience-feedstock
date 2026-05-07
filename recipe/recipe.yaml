@@ -19,18 +19,20 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling <=1.21.0
+    - hatchling
     - setuptools-git-versioning
     - pip
   run:
     - python >=${{ python_min }},<3.14
     - asteval
+    - lmfit
     - bumps
     - dfo-ls
-    - lmfit
-    - numpy
     - uncertainties
+    - numpy
     - scipp
+    - pooch
+    - matplotlib-base
 
 tests:
   - script: python -c "import easyscience"
