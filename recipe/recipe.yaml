@@ -1,6 +1,6 @@
 context:
   name: easyscience
-  version: "2.3.1"
+  version: "2.4.0"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easyscience-${{ version }}.tar.gz
-  sha256: 01ad3aca6a5a659193041c5d04401953b637d87dc20965456845120bbad249aa
+  sha256: d1f6df79e922629cb50dfa88ba6817c4183f12cf0d3c0ce16f8ff0d8386467f5
 
 build:
   number: 0
