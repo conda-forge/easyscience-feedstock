@@ -23,16 +23,13 @@ requirements:
     - setuptools-git-versioning
     - pip
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }}
     - asteval
     - lmfit
     - bumps
     - dfo-ls
-    - uncertainties
     - numpy
     - scipp
-    - pooch
-    - matplotlib-base
 
 tests:
   - script: python -c "import easyscience"
