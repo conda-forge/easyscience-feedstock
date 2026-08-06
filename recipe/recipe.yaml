@@ -1,6 +1,6 @@
 context:
   name: easyscience
-  version: "2.4.0"
+  version: "2.5.1"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easyscience-${{ version }}.tar.gz
-  sha256: d1f6df79e922629cb50dfa88ba6817c4183f12cf0d3c0ce16f8ff0d8386467f5
+  sha256: 86b92dd24b7703bf563775290cd1803a8b8134ba3b70dc6502719a376cb7303f
 
 build:
   number: 0
@@ -46,3 +46,7 @@ about:
 extra:
   recipe-maintainers:
     - MridulS
+    - rozyczko
+    - damskii9992
+    - AndrewSazonov
+    - henrikjacobsenfys
